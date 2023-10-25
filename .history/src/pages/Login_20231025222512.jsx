@@ -17,7 +17,7 @@ export default function Login() {
         const user = userCredential.user;
         localStorage.setItem('token', user.accessToken);
         localStorage.setItem('user', JSON.stringify(user));
-        navigate("/home");
+        navigate("/protected");
       } catch (error) {
         console.error(error);
       }

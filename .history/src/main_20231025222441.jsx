@@ -39,8 +39,8 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route path="signup" element={<SignUp />} />
       <Route path="login" element={<Login />} />
-      <Route path="/" element={<Protected />} >
-        <Route path="/home" index element={<Home />} />
+      <Route path="/protected" element={<Protected />} >
+        <Route path="/" index element={<Home />} />
       </Route>
     </Route>
   )
